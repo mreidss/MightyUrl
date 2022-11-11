@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <!-- Including bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="site.css" />
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MightyUrl</title>
+</head>
+<body>
+    <div class="container d-flex align-items-center justify-content-center">
+    <div class="col-12 col-sm-12 col-md-10 col-lg-7 mx-auto mt-5">
+        <div class="p-4 p-md-5 border rounded-3 bg-light">
+        <div class="text-center">
+        <form action="/shortUrls" method="POST" class="my-4">
+            <h1 class="mb-3">Mighty Url</h1>
+            <p class="">Shrink your large urls easily with mighty url</p>
+            <div class="row">
+                <div class="col-10">
+                    <label for="fullUrl" class="visually-hidden-focusable">Url:</label>
+                    <input value="<%= url %> " class="form-control  rounded-5" required placeholder="Enter a Url to shrink" type="url" name="fullUrl" id="fullUrl">
+                </div>
+                <div class="col-2">
+                    <button class="btn btn-primary rounded-5" type="submit">Shrink</button>
+                </div>
+            </div>
+        </form>
+
+        <% if(Error != null){ %>   
+            
+            <p class="text-danger">There was an error loading that url, please try again with another url</p>
+
+        <% } %>  
+
+        <% if(url != null && ShrunkUrl != null){ %>   
+            
+        <div class="row">
+            <div class="col-2 my-auto">
+                <label for="smallUrl">Shrunk Url:</label>
+            </div>
+            <div class="col-8">
+                <input value="<%= ShrunkUrl %>" class="form-control rounded-5" required type="url" name="smallUrl" id="smallUrl">
+            </div>
+            <div class="col-2">
+                <button class="btn btn-success rounded-5" id="copySmallUrl">Copy Url</button>
+            </div>
+        </div>
+        <% } %>  
+
+        <div class="container">
+            <div class="row">
+                <div class="col-6 position-relative">
+                    <a href="/dbCopyTable" class="btn btn-outline-secondary btn-sm rounded-5 position-absolute bottom-0 start-0">View All links</a>
+                </div>
+                <div class="col-6">
+                    <p class="mt-4 mb-0 text-muted align-right text-end">By Mitch Reidy</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+    </div>
+</body>
+</html>
+
+<script>
+    
+    // -- Copy info from the small url to the clipboard
+    document.getElementById("copySmallUrl").addEventListener('click', async () => {
+        await navigator.clipboard.writeText(document.getElementById("smallUrl").value);
+    })
+
+</script>
+
+<style>
+    
+</style>
