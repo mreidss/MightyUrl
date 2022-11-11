@@ -31,13 +31,13 @@ I have included a second page that presents the mongodb in a nice layout in a re
 
 ![secondpage](https://user-images.githubusercontent.com/19317685/201445756-a3b980f3-d182-4fff-8b46-0e2345b0af6e.gif)
 
-## Some more Technical Descisions
+## Some more Technical Decisions
 
-I decided to use a simple mongodb database because it can be difined simply from my nodjs app, I would prefer an sql based for a larger app with more complex table relationships but for this simple solition mongodb was perfect.
+I decided to use a simple mongodb database because it can be defined simply from my nodejs app, I would prefer an sql based for a larger app with more complex table relationships but for this simple solution mongodb was perfect.
 
 I used some simple bootstrap to present the app in a nice and neat manner.
 
-I included the ejs module for embeded javascript templating which I found very useful to very easily include a varible passed with the server response. This is shown below with the "ShrunkUrl" varibale surrounded by the <%= %> ejs syntax
+I included the ejs module for embedded javascript templating which I found very useful to very easily include a variable passed with the server response. This is shown below with the "ShrunkUrl" variable surrounded by the <%= %> ejs syntax.
 
 ```
 <div class="col-8">
