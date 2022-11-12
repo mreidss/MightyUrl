@@ -1,6 +1,6 @@
 # MightyUrl
 
-Mighty Url is a simple NodeJs application that converts long urls into a shorter form.
+Mighty Url is a simple NodeJs application that converts long urls into a shorter form. I named it MightyUrl because its like tinyUrl with a twist that is similar to my name Mitch :)
 
 ## Technology
 
