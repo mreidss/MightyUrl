@@ -20,11 +20,7 @@ Pull down from this repo to visual studio code, I use a mongoDB database that is
 
 ## How it works
 
-When you first access the app you will screen like below
-
-![image](https://user-images.githubusercontent.com/19317685/201444664-9452a87f-967e-4ed7-bbdb-de37208d25ea.png)
-
-Add a url that you would like to shorten to the input and click shrink! You will be given a shortened url which you can copy by clicking copy url, If you navigate to the short url, you will be directed to the original website that you entered.
+When you first access the app you will be shown an input to enter your long url with a shrink button to shrink it, Add a url that you would like to shorten to the input and click shrink! You will be given a shortened url which you can copy by clicking copy url, If you navigate to the short url, you will be directed to the original website that you entered.
 
 ![UrlShrinking](https://user-images.githubusercontent.com/19317685/201445139-566043ed-4b8d-4c84-8637-a3c3a0043e7a.gif)
 
