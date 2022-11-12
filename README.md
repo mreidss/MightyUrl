@@ -15,7 +15,7 @@ Mighty Url is created with nodejs, utalising express and mongoose. I also use a 
 4. Copy that link and replace my "mongoDBConnectionString" in the .env file
 5. Open the terminal in VS Code and use npm run devStart
 
-Pull down from this repo to visual studio code, I use a mongoDB databse that is set up locally with mogodb atlas, to run the app you will need to configure a simple mongodb database and replace the "mongoDBConnectionString" environment variable in the .env file. Once you have the mongodb set up you can simply use the command "npm run devStart" to run the application. I am utalising the nodemon server module to run the app so once you run with "npm run devStart" you should be able to open a browser and access your http://localhost:1234/ to view the running application.
+Pull down from this repo to visual studio code, I use a mongoDB database that is set up locally with mogodb cloud, to run the app you will need to configure a simple mongodb database and replace the "mongoDBConnectionString" environment variable in the .env file. Once you have the mongodb set up you can simply use the command "npm run devStart" to run the application. I am utalising the nodemon server module to run the app so once you run with "npm run devStart" you should be able to open a browser and access your http://localhost:1234/ to view the running application.
 
 ## How it works
 
@@ -23,7 +23,7 @@ When you first access the app you will screen like below
 
 ![image](https://user-images.githubusercontent.com/19317685/201444664-9452a87f-967e-4ed7-bbdb-de37208d25ea.png)
 
-Add a url that you would like to shorten to the input and click shrink! You will be given a shortened url which you can copy by clicking copy url, If you navigate to the short url, you will be directed to the origional website that you entered.
+Add a url that you would like to shorten to the input and click shrink! You will be given a shortened url which you can copy by clicking copy url, If you navigate to the short url, you will be directed to the original website that you entered.
 
 ![UrlShrinking](https://user-images.githubusercontent.com/19317685/201445139-566043ed-4b8d-4c84-8637-a3c3a0043e7a.gif)
 
