@@ -14,6 +14,7 @@ Mighty Url is created with nodejs, utalising express and mongoose. I also use a 
 ![image](https://user-images.githubusercontent.com/19317685/201444489-b17e968c-6e7c-4ff0-940d-a9c26dae5393.png)
 4. Copy that link and replace my "mongoDBConnectionString" in the .env file
 5. Open the terminal in VS Code and use npm run devStart
+6. Access your http://localhost:1234/ though your browser to view the running application
 
 Pull down from this repo to visual studio code, I use a mongoDB database that is set up locally with mogodb cloud, to run the app you will need to configure a simple mongodb database and replace the "mongoDBConnectionString" environment variable in the .env file. Once you have the mongodb set up you can simply use the command "npm run devStart" to run the application. I am utalising the nodemon server module to run the app so once you run with "npm run devStart" you should be able to open a browser and access your http://localhost:1234/ to view the running application.
 
