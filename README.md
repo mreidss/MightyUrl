@@ -28,7 +28,7 @@ Add a url that you would like to shorten to the input and click shrink! You will
 
 ![UrlShrinking](https://user-images.githubusercontent.com/19317685/201445139-566043ed-4b8d-4c84-8637-a3c3a0043e7a.gif)
 
-I have included a second page that presents the mongodb database in a nice layout in a responsive table. The table displays the amount of times the short link has been visited, tinyUrl provides a similar service that is user specific so I thought this was important to include.
+I have included a second page that presents the mongodb database in a nice layout in a responsive table. The table displays the amount of times the short link has been visited, tinyUrl provides a similar service that is user specific, this is not user specific but I thought this was important to include.
 
 ![secondpage](https://user-images.githubusercontent.com/19317685/201445756-a3b980f3-d182-4fff-8b46-0e2345b0af6e.gif)
 
