@@ -34,7 +34,7 @@ I have included a second page that presents the mongodb database in a nice layou
 
 ## Some more Technical Decisions
 
-I decided to use a simple mongodb database because it can be defined simply from my nodejs app, I would prefer an sql based for a larger app with more complex table relationships but for this simple solution mongodb was perfect.
+I decided to use a simple mongodb database because it can be defined simply from my nodejs app, I would prefer an sql based databse technology for a larger app with more complex table relationships but for this simple solution mongodb was perfect.
 
 I used some simple bootstrap to present the app in a nice and neat manner.
 
